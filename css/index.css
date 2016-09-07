@@ -1,0 +1,116 @@
+@charset 'utf-8';
+body {
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration:none;
+}
+.clearfix{*zoom:1;}
+.clearfix:after {display:block;clear:both;height:0;visibility:hidden;content:".";}
+.fl{
+    float: left;
+}
+#header {
+    position: relative;
+    height: 80px;
+    display: table;
+    vertical-align: middle;
+}
+#scanLogo,
+#searchLogo {
+    display: table-cell;
+    vertical-align: middle;
+}
+#scanLogo img {
+    margin-left: 38px;
+    margin-right: 69px;
+}
+#searchLogo img {
+    margin-right: 30px;
+}
+/*清除ul,li的默认样式*/
+ul,
+li {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    float: left;
+    font-size: 34px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 54px;
+}
+.active {
+    color: #26b2f8;
+    border-bottom: 1px solid #26b2f8;
+}
+.flexslider{
+    margin-bottom: 17px;
+}
+.slide_description {
+    position: absolute;
+    bottom: -32px;
+    height: 64px;
+    font: 32px/64px "微软雅黑";
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 720px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 16px;
+}
+.chanel{
+
+    margin:0 15px;
+    padding-bottom: 16px;
+}
+.chanel_header{
+        position: relative;
+        height: auto;
+        overflow: hidden;
+}
+.chanel_header h3{
+    float: left;
+    font-size: 36px;
+    color: #000000;
+    padding-left: 20px;
+    border-left: 2px solid #26b2f8;
+    display: inline-block;
+}
+.more{
+    position: absolute;
+    right: 0;
+    top: 39px;
+    color: #7d7d7d;
+    font-size: 30px;
+}
+.m_Item{
+    width: 333px;
+}
+.m_Item a{
+    display: inline-block;
+}
+.m_Item img{
+    width: 333px;
+    height: 190px;
+    background-size: contain;
+}
+.m_Item:nth-child(2n+1){
+    margin-right: 14px;
+}
+.thumbnail_title{
+    margin:12px 25px 0 0;
+    color:#000;
+    font-size: 29px;
+    font-family: "微软雅黑";
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:100%;
+}
