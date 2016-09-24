@@ -1,0 +1,173 @@
+@charset 'utf-8';
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+    padding: 0; 
+    margin: 0; 
+} 
+table { 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+} 
+fieldset,img { 
+    border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+ol,ul { 
+    list-style: none; 
+} 
+caption,th { 
+    text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal; 
+    font-size: 100%; 
+} 
+q:before,q:after { 
+    content:”; 
+} 
+abbr,acronym { 
+    border: 0; 
+}
+a{
+	text-decoration:none;
+}
+.clearfix:after{
+	display: block;
+	content: '.';
+	visibility: hidden;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.wrap15{
+	margin:12px 15px 0px 15px;
+	position: relative;
+
+}
+#queryText{
+	width:598px;
+	border: none;
+	font-size: 30px;
+	height: 56px;
+	color: #a9a8a8;
+	text-indent: 22px;
+	background-color: #f3f3f3;
+}
+.cancel{
+	font-size: 30px;
+	color: #363636;
+	line-height: 56px;
+	margin-left:22px;
+	display: inline-block;
+	    font-weight: bold;
+}
+.searchHistory{
+	
+}
+.searchHistoryTitle h1{
+	color:#363636;
+	font-size: 36px;
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 26px;
+	margin-bottom: 30px;
+}
+.searchHistoryTitle a{
+	margin-left: 500px;
+}
+.searchHistoryContent{
+
+}
+.searchHistoryContent .item{
+	width: 335px;
+	height: 60px;
+	background-color: #f3f3f3;
+	font-size: 30px;
+	color: #363636;
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+.searchHistoryContent .item:nth-child(2n+1){
+	margin-right: 20px;
+}
+.notify{
+	margin:22px 0 36px;
+	height: 64px;
+	line-height: 64px;
+	color:#ff0000;
+	font-size: 29px;
+	text-align: left;
+	border-bottom: 1px dashed #cecece;
+	font-weight: bold;
+}
+.hotTV{
+	margin-bottom: 31px;
+}
+.hotTV_title{
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #363636;
+}
+.hotTV_content a:nth-child(3n+1){
+	margin-right: 15px;
+}
+.hotTV_content a:nth-child(3n+2){
+	margin-right: 15px;
+}
+.hotTV_content a {
+	width: 220px;
+}
+.hotTV_content a div{
+	width: 220px;
+}
+.hotTV_content a img{
+	width: 220px;
+	height: 290px;
+}
+.hotTV_content a span{
+	color: #7d7d7d;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 19px;
+	display: block;
+}
+
+/* searchResult开始样式*/
+.wrap{
+	margin:10px 15px 0 15px;
+}
+.TV_item{
+	position: relative;
+	padding: 10px 0;
+	border-bottom: 1px dashed #cecece;
+}
+.collec{
+	position: absolute;
+	top: 10px;
+	right:0;
+}
+.TV_thumbnail{
+	margin-right: 16px;
+	width: 220px;
+	
+}
+.TV_desc h1{
+	font-size: 36px;
+	color: #363636;
+	margin-bottom: 28px;
+	font-weight: bold;
+}
+.TV_desc p{
+	font-size: 30px;
+	color: #545454;
+	line-height: 40px;
+}
+.TV_desc .not1Line{
+	margin-left: 90px;
+}
