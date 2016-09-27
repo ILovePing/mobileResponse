@@ -13,7 +13,102 @@
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="plugins/flexslider.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+<style type="text/css">
+    #wrapper {
+    position:absolute; z-index:1;
+    top:45px; bottom:48px; left:-9999px;
+    width:100%;
+    background:#aaa;
+    overflow:auto;
+}
 
+#scroller {
+    position:absolute; z-index:1;
+/*  -webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    width:100%;
+    padding:0;
+}
+
+#scroller ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align:left;
+}
+
+#scroller li {
+    padding:0 10px;
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #fff;
+    background-color:#fafafa;
+    font-size:14px;
+}
+
+#myFrame {
+    position:absolute;
+    top:0; left:0;
+}
+
+
+
+/**
+ *
+ * Pull down styles
+ *
+ */
+#pullDown, #pullUp {
+    background:#fff;
+    height:40px;
+    line-height:40px;
+    padding:5px 10px;
+    border-bottom:1px solid #ccc;
+    font-weight:bold;
+    font-size:14px;
+    color:#888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+    display:block; float:left;
+    width:40px; height:40px;
+    background-color: red;
+    -webkit-background-size:40px 80px; background-size:40px 80px;
+    -webkit-transition-property:-webkit-transform;
+    -webkit-transition-duration:250ms;  
+}
+#pullDown .pullDownIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+    -webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position:0 100%;
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+
+    -webkit-animation-name:loading;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+    from { -webkit-transform:rotate(0deg) translateZ(0); }
+    to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+</style>
 </head>
 
 <body>
@@ -47,7 +142,14 @@
             </li>
         </ul>
     </div>
-    <div class="chanel">
+    <script src="plugins/iscroll.js"></script>
+    <div id="wrapper">
+    <div id="scroller">
+    <div id="pullDown">
+            <span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+        </div>
+    <ul id="thelist">
+    <li class="chanel" >
         <div class="chanel_header">
             <h3>电视剧</h3>
             <a href="#" class="more">更多</a>
@@ -70,8 +172,8 @@
                 <a href="#" class="thumbnail_title">爱情回来了：另类见人另类见人</a>
             </div>
         </div>
-    </div>
-    <div class="chanel">
+    </li>
+    <li class="chanel">
         <div class="chanel_header">
             <h3>电影</h3>
             <a href="#" class="more">更多</a>
@@ -94,8 +196,8 @@
                 <a href="#" class="thumbnail_title">谍影重重5</a>
             </div>
         </div>
-    </div>
-    <div class="chanel">
+    </li>
+    <li class="chanel">
         <div class="chanel_header">
             <h3>少儿</h3>
             <a href="#" class="more">更多</a>
@@ -110,8 +212,8 @@
                 <a href="#" class="thumbnail_title">新大头儿子和小头爸爸</a>
             </div>
         </div>
-    </div>
-    <div class="chanel">
+    </li>
+    <li class="chanel">
         <div class="chanel_header">
             <h3>综艺</h3>
             <a href="#" class="more">更多</a>
@@ -126,8 +228,8 @@
                 <a href="#" class="thumbnail_title">中国好声音</a>
             </div>
         </div>
-    </div>
-    <div class="chanel">
+    </li>
+    <li class="chanel">
         <div class="chanel_header">
             <h3>纪录片</h3>
             <a href="#" class="more">更多</a>
@@ -142,6 +244,9 @@
                 <a href="#" class="thumbnail_title">舌尖上的中国</a>
             </div>
         </div>
+    </li>
+    </ul>
+    </div>
     </div>
         <script type="text/javascript" src="plugins/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
