@@ -38,7 +38,7 @@ li {
     padding: 0;
     margin: 0;
 }
-li {
+#nav li {
     float: left;
     font-size: 34px;
     line-height: 80px;
@@ -46,8 +46,8 @@ li {
     margin-right: 54px;
 }
 .active {
-    color: #26b2f8;
-    border-bottom: 1px solid #26b2f8;
+    color: #26b2f8!important;
+    border-bottom: 2px solid #26b2f8;
 }
 .flexslider{
     margin-bottom: 17px;
@@ -115,3 +115,222 @@ li {
     text-overflow: ellipsis;
     width:100%;
 }
+/*点播页面css*/
+.dianbo_item{
+    float: left;
+    width: 359px;
+    height: 254px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: #f3f3f3;
+}
+.dianbo_item:nth-child(2n){
+    border-right:none;
+}
+.dianbo_item img{
+    margin-top: 66px;
+    margin-left: 142px;
+    margin-bottom: 19px;
+}
+.dianbo_item h1{
+    font-size: 30px;
+    color: #363636;
+    text-align: center;
+        margin: 0;
+}
+/*点播yemian结束*/
+
+/*连接机顶盒页面*/
+.connect{
+     height: 997px;
+     display: table-cell;
+     vertical-align:middle;
+}
+#question{
+    position: absolute;
+    top: 21px;
+    right: 15px;
+}
+#connection{
+    position: relative;
+    margin-left: 202px;
+    vertical-align: middle;
+}
+.connect-desc{
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+}
+#connectTo{
+    width: 690px;
+    height: 100px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    margin:0px 0 86px 15px;
+    font-size: 35px;
+    line-height: 100px;
+    background: url(../assets/images/button_01.png);
+}
+/*连接机顶盒页面结束*/
+
+/*影视剧列表开始*/
+.wrap15{
+    margin: 0 15px;
+}
+#tv_list_nav{
+    margin-top: -5px;
+    color: #363636;
+}
+#tv_list_nav li{
+    float: left;
+    font-size: 36px;
+    line-height: 86px;
+    margin-right: 40px;
+    font-family: "微软雅黑";
+}
+#tv_list_content li{
+    float: left;
+    width: 220px;
+    height: 357px;
+    margin-right: 15px;
+}
+#tv_list_content li:nth-child(3n){
+    margin-right:0;
+}
+#tv_list_content img{
+    width: 220px;
+    height: 291px;
+
+}
+#tv_list_content h1{
+    line-height: 30px;
+   
+     font-size: 30px;
+    color: #545454;
+    font-family: "微软雅黑";
+    text-align: center;
+    margin-bottom: 21px;
+    margin-top: 17px;
+}
+/*影视剧列表结束*/
+/*影视剧detail*/
+.tv_detail-head{
+    width: 100%;
+    height: 494px;
+    background: url(../assets/images/tv_b.png);
+}
+.zongyi_detail-head{
+    width: 100%;
+    height: 494px;
+    background: url(../assets/images/ent_b.png);
+}
+.haibao{
+    margin: 72px 21px 0 27px;
+    display: inline-block;
+}
+.tv_detial-short{
+    color: #fff;
+    font-size: 25px;
+    margin: 72px 0 0 0;
+        font-family: "微软雅黑";
+            width: 387px;
+}
+.tv_detial-short h1{
+    font-size: 33px;
+    margin-bottom: 22px;
+    line-height: 33px;
+    margin-top: 0;
+}
+.tv_detial-short p{
+    margin:0;
+    margin-bottom: 14px;
+    overflow:hidden;text-overflow:ellipsis; -o-text-overflow:ellipsis;white-space:nowrap;width:100%;
+}
+.tv_detail-content{
+    font-family: "微软雅黑";
+    margin:21px 24px 120px 24px;
+}
+.tv_detail-content h1{
+    font-size: 30px;
+}
+#lj-head{
+    margin:42px 0 21px 0;
+    color: #363636;
+   font-weight: bold;
+   font-size: 36px;
+}
+#lj-text{
+    color: #545454;
+    margin-bottom: 61px;
+    font-size: 36px;
+}
+#xq-head{
+    margin:0 0 23px 0;
+     color: #363636;
+   font-weight: bold;
+   font-size: 36px;
+}
+.tv_detail-content p{
+    color: #545454;
+    font-size: 24px;
+    text-indent:36px;
+    margin: 0;
+}
+/*影视剧detail结束*/
+/*综艺列表开始*/
+#zongyi_list_nav li{
+    float: left;
+    font-size: 36px;
+    line-height: 86px;
+    margin-right: 28px;
+    font-family: "微软雅黑";
+}
+#zongyi_list_content li{
+    position: relative;
+    float: left;
+    width: 335px;
+    height: 372px;
+    font-size: 36px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: "微软雅黑";
+}
+#zongyi_list_content li:nth-child(2n){
+    margin-right: 0;
+}
+.collection01{
+    position: absolute;
+    top: 0px;
+    right:5px;
+    color: #fff;
+    font-size: 28px;
+}
+.collection01 img{
+    margin-right: 10px;
+}
+#zongyi_list_content p{
+    font-size: 30px;
+    color: #545454;
+    display: inline;
+    font-family: "微软雅黑";
+}
+/*综艺列表结束*/
+/*综艺详情开始*/
+.small_nav{
+    height: 74px;
+    border-bottom: 1px solid #c6c6c6;
+    background-color: #f3f3f3;
+    color: #363636;
+    font-size: 36px;
+    font-family: "微软雅黑";
+}
+.small_nav .sN1,.small_nav .sN2{
+    line-height: 74px;
+    color: #363636;
+}
+.sN1{
+    margin-left: 146px;
+    margin-right: 256px;
+}
+/*综艺详情结束*/

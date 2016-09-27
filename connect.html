@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+ <script type="text/javascript"> 
+     var phoneScale = parseInt(window.screen.width) / 720;
+     document.write('<meta name="viewport" content="width=720px, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+ </script>
+    <meta name="format-detection" content="telephone=no" />
+    <title>连接机顶盒</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+</head>
+<body>
+	<div class="connect">
+		<img src="assets/images/connection.png" id="connection">
+		<img src="assets/images/question.png" id="question">
+	</div>
+	<p class="connect-desc">1. 打开机顶盒</p>
+	<p class="connect-desc">2. 扫描多屏互动页面微信电视二维码</p>
+	<span id="connectTo">连接机顶盒</span>
+ <script type="text/javascript" src="plugins/jquery-1.11.3.min.js"></script>
+</body>
+</html>
