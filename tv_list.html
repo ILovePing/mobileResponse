@@ -11,17 +11,28 @@
     <meta name="format-detection" content="telephone=no" />
     <title>影视剧列表</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="plugins/swiper.css">
 </head>
 <body>
 	<div class="wrap15">
-		<ul id="tv_list_nav" class="clearfix">
-			<li class="active">热播</li>
-			<li>最新</li>
-			<li>日韩</li>
-			<li>港台</li>
-			<li>美剧</li>
-			<li>片库</li>
-		</ul>
+	<div class="swiper-container">
+     	<div id="tv_list_nav" class="swiper-wrapper clearfix">
+			<div class="swiper-slide active">热播</div>
+			<div class="swiper-slide">最新</div>
+			<div class="swiper-slide">日韩</div>
+			<div class="swiper-slide">港台</div>
+			<div class="swiper-slide">美剧</div>
+			<div class="swiper-slide">片库</div>
+			<div class="swiper-slide">港台</div>
+			<div class="swiper-slide">美剧</div>
+			<div class="swiper-slide">片库</div>
+			<!-- <div class="swiper-pagination"></div> -->
+		</div>
+	</div>
+	</div>
+      
+   
+		
 		<ul id="tv_list_content" class="clearfix">
 			<li><img src="assets/images/hot1.png"><h1>小别离</h1></li>
 			<li><img src="assets/images/hot1.png"><h1>小别离</h1></li>
@@ -39,5 +50,14 @@
 	</div>
 
 <script type="text/javascript" src="plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="plugins/swiper.js"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+    	//pagination: '.swiper-pagination',
+        slidesPerView: 6,
+        paginationClickable: true,
+        spaceBetween: 30
+  }) 
+</script>
 </body>
 </html>
